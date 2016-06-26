@@ -1,6 +1,7 @@
 # Integer-Sorting
 Sorts integers up to 20 times faster than merge sort. I have heard radix sort does the same thing so I would like to compare my algarithm with radix.
-public static int [] sort(int [] array){
+public class Sorter{
+  public static int [] sort(int [] array){
     int large = array[0];
     int min = array[0];
     for(int i=1; i<array.length; i++){
@@ -21,6 +22,6 @@ public static int [] sort(int [] array){
         large++;
       }
     }
-    
     return array;
   }
+}
